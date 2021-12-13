@@ -9,7 +9,7 @@
     
     <title>
         
-            markdown使用指南 |
+            vue—resource |
         
         Home of GUA
     </title>
@@ -148,7 +148,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">markdown使用指南</span>
+            <span class="title-hover-animation">vue—resource</span>
         </div>
 
         
@@ -167,8 +167,8 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fas fa-edit"></i>&nbsp;
-        <span class="pc">2021-12-11 01:02:30</span>
-        <span class="mobile">2021-12-11 01:02</span>
+        <span class="pc">2021-12-13 22:10:01</span>
+        <span class="mobile">2021-12-13 22:10</span>
     </span>
     
     
@@ -189,234 +189,32 @@
         
 
         <div class="article-content markdown-body">
-            <h1><a src="http://markdown.p2hp.com/basic-syntax/#code" color="black">markdown使用指南</a></h1>
-
-<blockquote>
-<blockquote>
-<h3>1.markdown的基础格式</h3>
-
-<blockquote>
-<h4>1.1换行</h4>
-</blockquote>
-<blockquote>
-<blockquote>
+            <h2 id="vue-resource插件使用"><a href="#vue-resource插件使用" class="headerlink" title="vue-resource插件使用"></a>vue-resource插件使用</h2><ul>
+<li><p>说明:</p>
 <ul>
-<li>通过结尾添加两个空格来形成段落，或者p标签</li>
+<li>vue-resource是非官方提供的ajax插件, 受众广</li>
+<li>github: <a class="link"   target="_blank" rel="noopener" href="https://github.com/pagekit/vue-resource" >https://github.com/pagekit/vue-resource<i class="fas fa-external-link-alt"></i></a></li>
+<li>vue官方开始推荐使用axios作为ajax库</li>
+<li>下载: npm install vue-resource –save</li>
 </ul>
-<p>这个指南实在是太详细啦！</p><p>我要认真学习！！</p>
-
+</li>
+<li><p>基本使用编码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//引入模块</span><br><span class="line">import VueResource from &#x27;vue-resource&#x27;</span><br><span class="line">//使用插件</span><br><span class="line">Vue.use(VueResource)</span><br><span class="line"> </span><br><span class="line">//通过vue组件对象发送ajax请求</span><br><span class="line">this.$http.get(&#x27;/someUrl&#x27;).then((response) =&gt; &#123;</span><br><span class="line">  // success callback</span><br><span class="line">  console.log(response.body) //返回结果数据</span><br><span class="line">&#125;, (response) =&gt; &#123;</span><br><span class="line">  // error callback</span><br><span class="line">  console.log(response.statusText) //错误信息</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li>
+<li><p>详细用法(查看在线文档)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/pagekit/vue-resource/blob/develop/docs/http.md</span><br></pre></td></tr></table></figure></li>
+<li><p>使用axios发送ajax请求</p>
 <ul>
-<li>使用空行来进行换行  或者是&lt;br&gt;</li>
-</ul>
-</blockquote>
-<h4>1.2字体</h4>
-
-<blockquote>
-<ul>
-<li>*斜体文字* 或 _斜体文字_  效果为  <em>斜体</em></li>
-<li>**粗体文字** 或__粗体文字__ 效果为  <strong>粗体</strong></li>
-<li>***粗斜体文字*** 或 ___粗体文字___ 效果为  <em><strong>粗斜体</strong></em></li>
-</ul>
-</blockquote>
-<h4>1.3分割线</h4>
-
-<blockquote>
-<ul>
-<li><p>通过在一行中三个以上的星号，减号，底线来创建分隔线并不能有其他东西，也能在期间插入空格，效果如  ***</p>
-<hr>
-<p>上面的就是分隔线</p>
+<li><p>axios在线文档: <a class="link"   target="_blank" rel="noopener" href="https://github.com/mzabriskie/axios" >https://github.com/mzabriskie/axios<i class="fas fa-external-link-alt"></i></a></p>
+</li>
+<li><p>下载axios: npm install axios –save</p>
+</li>
+<li><p>使用:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import axios from &#x27;axios&#x27;</span><br><span class="line">axios.get(url)</span><br><span class="line">  .then((response) =&gt; &#123;</span><br><span class="line">    console.log(response)</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure></li>
+<li><p>测试接口: <a class="link"   target="_blank" rel="noopener" href="https://api.github.com/users/octocat/gists" >https://api.github.com/users/octocat/gists<i class="fas fa-external-link-alt"></i></a></p>
 </li>
 </ul>
-</blockquote>
-<h4>1.4删除线</h4>
-
-<blockquote>
-<ul>
-<li><p>文字两端用两个波浪线夹住就能添加删除线，如:  ~~delete~~</p>
-<p><del>delete</del></p>
 </li>
 </ul>
-</blockquote>
-<h4>1.5块引用</h4>
-
-<blockquote>
-<ul>
-<li>使用&gt;能创建块引用(其实就是缩进里的进)，可以嵌套使用，如:</li>
-</ul>
-<blockquote>
-<p>一个&gt;</p>
-<blockquote>
-<p>两个&gt;</p>
-</blockquote>
-</blockquote>
-<ul>
-<li>可以嵌套下面所述的清单</li>
-</ul>
-</blockquote>
-</blockquote>
-<blockquote>
-<h4>1.6清单</h4>
-
-<blockquote>
-<ul>
-<li>无序列表，其中使用-，*，+都可以</li>
-</ul>
-<table>
-    <tr bgcolor="#d9d9d9" align="center">
-        <th>Markdown</th>
-        <th>HTML</th>
-        <th>输出结果</th>
-    </tr>
-    <tr>
-        <td>
-            - First item</br>- Second item</br>- Third item</br>- Fourth item
-        </td>
-        <td>&lt;ul></br>
-            &emsp;&lt;li>First item&lt;/li></br>
-            &emsp;&lt;li>Second item&lt;/li></br>
-            &emsp;&lt;li>Third item&lt;/li></br>
-            &emsp;&lt;li>Fourth item&lt;/li></br>
-            &lt;/ul>
-        </td>
-        <td><ul>
-            <li>First item</li>
-            <li>Second item</li>
-            <li>Third item</li>
-            <li>Fourth item</li>
-            </ul></td>
-    </tr>
-        <td>
-            - First item</br>- Second item</br>- Third item</br>&emsp;- Indented item</br>&emsp;- Indented item</br>- Fourth item
-        </td>
-        <td>
-            &lt;ul></br>
-                &emsp;&lt;li>First item</li></br>
-                &emsp;&lt;li>Second item</li></br>
-                &emsp;&lt;li>Third item</br>
-                    &emsp;&emsp;&lt;ul></br>
-                        &emsp;&emsp;&emsp;&lt;li>Indented item</li></br>
-                        &emsp;&emsp;&emsp;&lt;li>Indented item</li></br>
-                    &emsp;&emsp;&lt;/ul></br>
-                &emsp;&lt;/li></br>
-                &emsp;&lt;li>Fourth item</li></br>
-            &lt;/ul>
-        </td>
-        <td>
-            <ul>
-                <li>First item</li>
-                <li>Second item</li>
-                <li>Third item
-                    <ul>
-                        <li>Indented item</li>
-                        <li>Indented item</li>
-                    </ul>
-                </li>
-                <li>Fourth item</li>
-            </ul>
-        </td>
-</table>
-
-<hr>
-<ul>
-<li>有序列表即在前面添加数字和句号，数字不需要排序</li>
-</ul>
-<table>
-    <tr bgcolor="#d9d9d9" align="center">
-        <th>Markdown</th>
-        <th>HTML</th>
-        <th>输出结果</th>
-    </tr>
-    <tr>
-        <td>1. First item</br>
-            8. Second item</br>
-            3. Third item</br>
-            5. Fourth item
-        </td>
-        <td>&lt;ol></br>
-            &emsp;&lt;li>First item&lt;/li></br>
-            &emsp;&lt;li>Second item&lt;/li></br>
-            &emsp;&lt;li>Third item&lt;/li></br>
-            &emsp;&lt;li>Fourth item&lt;/li></br>
-            &lt;/ol>
-        </td>
-        <td>
-            <ol>
-                <li>First item</li>
-                <li>Second item</li>
-                <li>Third item</li>
-                <li>Fourth item</li>
-            </ol>
-        </td>
-    </tr>
-</table>
-
-<hr>
-<ul>
-<li>在markdown提供的列表中似乎会将输入其中的值默认转义插入不会解析其中的语句，因此像想在列表中插入样式建议还是使用html的原生制表语法</li>
-</ul>
-</blockquote>
-<h4>1.7列表间添加元素</h4>
-
-<blockquote>
-<ul>
-<li>要在保留列表连续性的同时在列表中添加另一个元素，请将该元素缩进四个空格或一个制表符</li>
-</ul>
-<table><tr><td bgcolor="#f2f2f2">
-<pre>* this is first sentence
-* this is second
-    > this is insert one
-* this is third
-</pre></td></tr></table>
-
-<p>输出为以下结果</p>
-<ul>
-<li><p>This is the first list item.</p>
-</li>
-<li><p>Here’s the second list item.</p>
-<blockquote>
-<p>A blockquote would look great below the second list item.</p>
-</blockquote>
-</li>
-<li><p>And here’s the third list item.</p>
-</li>
-</ul>
-</blockquote>
-<h4>1.8代码块</h4>
-
-<blockquote>
-<ul>
-<li>代码块通常缩进四个空格或一个制表符。当它们在列表中时，将它们缩进八个空格或两个选项卡如下图所示</li>
-</ul>
-<pre><code>1.  Open the file.
-2.  Find the following code block on line 21:
-
-        &lt;html&gt;
-          &lt;head&gt;
-            &lt;title&gt;Test&lt;/title&gt;
-          &lt;/head&gt;
-
-3.  Update the title to match the name of your website.
-</code></pre>
-<p>以下为输出结果</p>
-<ol>
-<li><p>Open the file.</p>
-</li>
-<li><p>Find the following code block on line 21:</p>
-<pre><code> &lt;html&gt;
-   &lt;head&gt;
-     &lt;title&gt;Test&lt;/title&gt;
-   &lt;/head&gt;
-</code></pre>
-</li>
-<li><p>Update the title to match the name of your website.</p>
-</li>
-</ol>
-</blockquote>
-<h4>1.9图片</h4>
-</blockquote>
-<p>null</p>
-</blockquote>
-</blockquote>
 
         </div>
 
@@ -424,11 +222,11 @@
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li>本文标题：markdown使用指南</li>
+        <li>本文标题：vue—resource</li>
         <li>本文作者：CJY</li>
-        <li>创建时间：2021-12-11 01:02:30</li>
+        <li>创建时间：2021-12-13 22:10:01</li>
         <li>
-            本文链接：https://bighhs.github.io/2021/12/11/markdown使用指南/
+            本文链接：https://bighhs.github.io/2021/12/13/vue—resource/
         </li>
         <li>
             版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -444,29 +242,14 @@
         
             <div class="article-nav">
                 
-                    <div class="article-prev">
-                        <a class="prev"
-                           rel="prev"
-                           href="/2021/12/13/vue/"
-                        >
-                            <span class="left arrow-icon flex-center">
-                              <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex-center">
-                                <span class="post-nav-title-item">vue</span>
-                                <span class="post-nav-item">上一篇</span>
-                            </span>
-                        </a>
-                    </div>
-                
                 
                     <div class="article-next">
                         <a class="next"
                            rel="next"
-                           href="/2021/12/10/welcome/"
+                           href="/2021/12/13/vue%E2%80%94cli/"
                         >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">welcome</span>
+                                <span class="post-nav-title-item">vue—cli</span>
                                 <span class="post-nav-item">下一篇</span>
                             </span>
                             <span class="right arrow-icon flex-center">
@@ -671,7 +454,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">markdown使用指南</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.markdown的基础格式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">1.1换行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">1.2字体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.0.1.3.</span> <span class="nav-text">1.3分割线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.0.1.4.</span> <span class="nav-text">1.4删除线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.0.1.5.</span> <span class="nav-text">1.5块引用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.0.1.6.</span> <span class="nav-text">1.6清单</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.0.1.7.</span> <span class="nav-text">1.7列表间添加元素</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.0.1.8.</span> <span class="nav-text">1.8代码块</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.0.1.9.</span> <span class="nav-text">1.9图片</span></a></li></ol></li></ol></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#vue-resource%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8"><span class="nav-number">1.</span> <span class="nav-text">vue-resource插件使用</span></a></li></ol>
     </div>
 </div>
         </aside>

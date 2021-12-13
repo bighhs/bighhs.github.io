@@ -9,7 +9,7 @@
     
     <title>
         
-            markdown使用指南 |
+            vue |
         
         Home of GUA
     </title>
@@ -148,7 +148,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">markdown使用指南</span>
+            <span class="title-hover-animation">vue</span>
         </div>
 
         
@@ -167,8 +167,8 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fas fa-edit"></i>&nbsp;
-        <span class="pc">2021-12-11 01:02:30</span>
-        <span class="mobile">2021-12-11 01:02</span>
+        <span class="pc">2021-12-13 22:06:04</span>
+        <span class="mobile">2021-12-13 22:06</span>
     </span>
     
     
@@ -189,234 +189,237 @@
         
 
         <div class="article-content markdown-body">
-            <h1><a src="http://markdown.p2hp.com/basic-syntax/#code" color="black">markdown使用指南</a></h1>
-
-<blockquote>
-<blockquote>
-<h3>1.markdown的基础格式</h3>
-
-<blockquote>
-<h4>1.1换行</h4>
-</blockquote>
-<blockquote>
-<blockquote>
-<ul>
-<li>通过结尾添加两个空格来形成段落，或者p标签</li>
-</ul>
-<p>这个指南实在是太详细啦！</p><p>我要认真学习！！</p>
-
-<ul>
-<li>使用空行来进行换行  或者是&lt;br&gt;</li>
-</ul>
-</blockquote>
-<h4>1.2字体</h4>
-
-<blockquote>
-<ul>
-<li>*斜体文字* 或 _斜体文字_  效果为  <em>斜体</em></li>
-<li>**粗体文字** 或__粗体文字__ 效果为  <strong>粗体</strong></li>
-<li>***粗斜体文字*** 或 ___粗体文字___ 效果为  <em><strong>粗斜体</strong></em></li>
-</ul>
-</blockquote>
-<h4>1.3分割线</h4>
-
-<blockquote>
-<ul>
-<li><p>通过在一行中三个以上的星号，减号，底线来创建分隔线并不能有其他东西，也能在期间插入空格，效果如  ***</p>
-<hr>
-<p>上面的就是分隔线</p>
-</li>
-</ul>
-</blockquote>
-<h4>1.4删除线</h4>
-
-<blockquote>
-<ul>
-<li><p>文字两端用两个波浪线夹住就能添加删除线，如:  ~~delete~~</p>
-<p><del>delete</del></p>
-</li>
-</ul>
-</blockquote>
-<h4>1.5块引用</h4>
-
-<blockquote>
-<ul>
-<li>使用&gt;能创建块引用(其实就是缩进里的进)，可以嵌套使用，如:</li>
-</ul>
-<blockquote>
-<p>一个&gt;</p>
-<blockquote>
-<p>两个&gt;</p>
-</blockquote>
-</blockquote>
-<ul>
-<li>可以嵌套下面所述的清单</li>
-</ul>
-</blockquote>
-</blockquote>
-<blockquote>
-<h4>1.6清单</h4>
-
-<blockquote>
-<ul>
-<li>无序列表，其中使用-，*，+都可以</li>
-</ul>
-<table>
-    <tr bgcolor="#d9d9d9" align="center">
-        <th>Markdown</th>
-        <th>HTML</th>
-        <th>输出结果</th>
-    </tr>
-    <tr>
-        <td>
-            - First item</br>- Second item</br>- Third item</br>- Fourth item
-        </td>
-        <td>&lt;ul></br>
-            &emsp;&lt;li>First item&lt;/li></br>
-            &emsp;&lt;li>Second item&lt;/li></br>
-            &emsp;&lt;li>Third item&lt;/li></br>
-            &emsp;&lt;li>Fourth item&lt;/li></br>
-            &lt;/ul>
-        </td>
-        <td><ul>
-            <li>First item</li>
-            <li>Second item</li>
-            <li>Third item</li>
-            <li>Fourth item</li>
-            </ul></td>
-    </tr>
-        <td>
-            - First item</br>- Second item</br>- Third item</br>&emsp;- Indented item</br>&emsp;- Indented item</br>- Fourth item
-        </td>
-        <td>
-            &lt;ul></br>
-                &emsp;&lt;li>First item</li></br>
-                &emsp;&lt;li>Second item</li></br>
-                &emsp;&lt;li>Third item</br>
-                    &emsp;&emsp;&lt;ul></br>
-                        &emsp;&emsp;&emsp;&lt;li>Indented item</li></br>
-                        &emsp;&emsp;&emsp;&lt;li>Indented item</li></br>
-                    &emsp;&emsp;&lt;/ul></br>
-                &emsp;&lt;/li></br>
-                &emsp;&lt;li>Fourth item</li></br>
-            &lt;/ul>
-        </td>
-        <td>
             <ul>
-                <li>First item</li>
-                <li>Second item</li>
-                <li>Third item
-                    <ul>
-                        <li>Indented item</li>
-                        <li>Indented item</li>
-                    </ul>
-                </li>
-                <li>Fourth item</li>
-            </ul>
-        </td>
-</table>
-
-<hr>
+<li><p>Vue.js是什么?</p>
 <ul>
-<li>有序列表即在前面添加数字和句号，数字不需要排序</li>
+<li>一位华裔前Google工程师开发的前端js库</li>
+<li>一个MVVM的框架</li>
+<li>核心概念<ul>
+<li>数据绑定</li>
+<li>组件</li>
 </ul>
-<table>
-    <tr bgcolor="#d9d9d9" align="center">
-        <th>Markdown</th>
-        <th>HTML</th>
-        <th>输出结果</th>
-    </tr>
-    <tr>
-        <td>1. First item</br>
-            8. Second item</br>
-            3. Third item</br>
-            5. Fourth item
-        </td>
-        <td>&lt;ol></br>
-            &emsp;&lt;li>First item&lt;/li></br>
-            &emsp;&lt;li>Second item&lt;/li></br>
-            &emsp;&lt;li>Third item&lt;/li></br>
-            &emsp;&lt;li>Fourth item&lt;/li></br>
-            &lt;/ol>
-        </td>
-        <td>
-            <ol>
-                <li>First item</li>
-                <li>Second item</li>
-                <li>Third item</li>
-                <li>Fourth item</li>
-            </ol>
-        </td>
-    </tr>
-</table>
-
-<hr>
-<ul>
-<li>在markdown提供的列表中似乎会将输入其中的值默认转义插入不会解析其中的语句，因此像想在列表中插入样式建议还是使用html的原生制表语法</li>
-</ul>
-</blockquote>
-<h4>1.7列表间添加元素</h4>
-
-<blockquote>
-<ul>
-<li>要在保留列表连续性的同时在列表中添加另一个元素，请将该元素缩进四个空格或一个制表符</li>
-</ul>
-<table><tr><td bgcolor="#f2f2f2">
-<pre>* this is first sentence
-* this is second
-    > this is insert one
-* this is third
-</pre></td></tr></table>
-
-<p>输出为以下结果</p>
-<ul>
-<li><p>This is the first list item.</p>
 </li>
-<li><p>Here’s the second list item.</p>
-<blockquote>
-<p>A blockquote would look great below the second list item.</p>
-</blockquote>
-</li>
-<li><p>And here’s the third list item.</p>
-</li>
+<li>与angular.js类似的是声明式开发，但性能高于angular，体积小很多, 比较适合移动端开发</li>
+<li>它本身不是全能框架, 只关注UI, 如果需要router/ajax, 可以使用对应插件或使用别的库来实现</li>
 </ul>
-</blockquote>
-<h4>1.8代码块</h4>
-
-<blockquote>
+</li>
+<li><p>基本使用</p>
 <ul>
-<li>代码块通常缩进四个空格或一个制表符。当它们在列表中时，将它们缩进八个空格或两个选项卡如下图所示</li>
-</ul>
-<pre><code>1.  Open the file.
-2.  Find the following code block on line 21:
-
-        &lt;html&gt;
-          &lt;head&gt;
-            &lt;title&gt;Test&lt;/title&gt;
-          &lt;/head&gt;
-
-3.  Update the title to match the name of your website.
-</code></pre>
-<p>以下为输出结果</p>
-<ol>
-<li><p>Open the file.</p>
-</li>
-<li><p>Find the following code block on line 21:</p>
-<pre><code> &lt;html&gt;
-   &lt;head&gt;
-     &lt;title&gt;Test&lt;/title&gt;
-   &lt;/head&gt;
+<li>引入vue.js</li>
+<li>创建Vue对象(vm), 指定选项(配置)对象<ul>
+<li>el : 指定dom标签容器的选择器</li>
+<li>data : 指定初始化状态属性数据的对象<pre><code>对象/函数(返回一个对象)
 </code></pre>
 </li>
-<li><p>Update the title to match the name of your website.</p>
+</ul>
 </li>
-</ol>
-</blockquote>
-<h4>1.9图片</h4>
-</blockquote>
-<p>null</p>
-</blockquote>
-</blockquote>
+<li>页面中<ul>
+<li>使用v-model: 实现双向数据绑定</li>
+<li>使用: 显示数据</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Vue对象的选项</p>
+<ul>
+<li><p>el</p>
+<ul>
+<li>指定dom标签容器的选择器</li>
+<li>Vue就会管理对应的标签及其子标签</li>
+</ul>
+</li>
+<li><p>data</p>
+<ul>
+<li>对象或函数类型</li>
+<li>指定初始化状态属性数据的对象</li>
+<li>vue对象可以直接访问其属性</li>
+<li>页面中可以直接访问使用</li>
+<li>数据代理: 由vm对象来代理对data中所有属性的操作(读/写)</li>
+</ul>
+</li>
+<li><p>methods</p>
+<ul>
+<li>包含多个方法的对象</li>
+<li>供页面中的事件指令来绑定回调</li>
+<li>回调函数默认有event参数, 但也可以指定自己的参数</li>
+<li>所有的方法由vue对象来调用, 访问data中的属性直接使用this.xxx</li>
+</ul>
+</li>
+<li><p>computed</p>
+<ul>
+<li>包含多个方法的对象</li>
+<li>对状态属性进行计算返回一个新的数据, 供页面获取显示</li>
+<li>一般情况下是相当于是一个只读的属性</li>
+<li>利用set/get方法来实现属性数据的计算读取, 同时监视属性数据的变化</li>
+<li>如何给对象定义get/set属性<ul>
+<li>在创建对象时指定: get name () {return xxx} / set name (value) {}</li>
+<li>对象创建之后指定: Object.defineProperty(obj, age, {get(){}, set(value){}})</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>watch</p>
+<ul>
+<li><p>Vue.$watch()</p>
+</li>
+<li><p>包含多个属性监视的对象</p>
+</li>
+<li><p>分为一般监视和深度监视</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#x27;xxx&#x27; : &#123;</span><br><span class="line">  deep : true,</span><br><span class="line">  handler : fun(value)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>扩展数组</p>
+<ul>
+<li>对数组的常用方法进行了包装(用于数据绑定)</li>
+<li>$remove(item) : 删除数组中对应的元素</li>
+<li>$set(index, ele) : 给数组中指定下标指定对应的元素 </li>
+</ul>
+</li>
+<li><p>过渡</p>
+<ul>
+<li><p>利用vue去操控css的动画</p>
+</li>
+<li><p>transition/animation</p>
+</li>
+<li><p>使用</p>
+<ul>
+<li><div v-show="a"  v-if="a" transition="xxx"></li>
+<li><p>定义css样式</p>
+<ul>
+<li>.xxx-transition: 在其中去指定transition/animation</li>
+<li>.xxx-enter</li>
+<li>.xxx-leave</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>动画的钩子函数</p>
+</li>
+</ul>
+</li>
+<li><p>生命周期</p>
+<ul>
+<li>vm/组件对象</li>
+<li>生命周期图</li>
+<li>主要的生命周期函数(钩子)<ul>
+<li>created(): 启动异步任务(发送ajax请求, 启动定时器)</li>
+<li>beforeDestroy(): 做一些收尾的工作</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>页面指令</p>
+<ul>
+<li>v-text/v-html: 指定标签体<ul>
+<li>v-text : 当作纯文本</li>
+<li>v-html : 将value作为html标签来解析</li>
+</ul>
+</li>
+<li>v-if v-else v-show<ul>
+<li>v-if : 如果vlaue为true, 当前标签会输出在页面中</li>
+<li>v-else : 与v-if一起使用, 如果value为false, 将当前标签输出到页面中</li>
+<li>v-show: 就会在标签中添加display样式, 如果vlaue为true, display=block, 否则是none</li>
+</ul>
+</li>
+<li>v-for : 遍历<ul>
+<li>遍历数组 : v-for=”person in persons”   $index</li>
+<li>遍历对象 : v-for=”value in person”   $key</li>
+</ul>
+</li>
+<li>v-on : 绑定事件监听<ul>
+<li>v-on:事件名, 可以缩写为: @事件名</li>
+<li>监视具体的按键: @keyup.keyCode   @keyup.enter</li>
+<li>阻止事件的冒泡和事件默认行为: @click.stop   @click.prevent</li>
+<li>隐含对象: $event</li>
+</ul>
+</li>
+<li>v-bind : 强制绑定解析表达式  <ul>
+<li>很多属性值是不支持表达式的, 就可以使用v-bind</li>
+<li>可以缩写为:  :id=’name’</li>
+<li>:class<ul>
+<li>:class=”a”</li>
+<li>:class=”{classA : isA, classB : isB}”</li>
+<li>:class=”[classA, classB]”</li>
+</ul>
+</li>
+<li>:style<br>:style=”{color : color}”</li>
+</ul>
+</li>
+<li>v-model<ul>
+<li>双向数据绑定</li>
+</ul>
+</li>
+<li>v-el : 标识某个标签<ul>
+<li>v-el:xxx</li>
+<li>读取得到标签对象: this.$els.xxx</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>过滤器</p>
+<ul>
+<li><p>内置</p>
+<ul>
+<li><p>capitalize : 首字母大小</p>
+</li>
+<li><p>uppercase : 全部大写</p>
+</li>
+<li><p>lowercase : 全部小写</p>
+</li>
+<li><p>currency : 货币化</p>
+</li>
+<li><p>pluralize : 单数/复数处理</p>
+</li>
+<li><p>json : json格式化</p>
+</li>
+<li><p>limitBy : 限定数组的部分元素(下标)</p>
+</li>
+<li><p>filterBy : 限定数组的部分元素(值)</p>
+</li>
+<li><p>orderBy : 对数组进行排序</p>
+</li>
+</ul>
+</li>
+<li><p>自定义</p>
+</li>
+<li><p>全局过滤器</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Vue.filter(&#x27;过滤器名&#x27;, function(value, xxx, yyy) &#123;</span><br><span class="line">  //处理逻辑</span><br><span class="line">  return result;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
+<li><p>局部过滤器</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">new Vue(&#123;</span><br><span class="line">  filters : &#123;</span><br><span class="line">    &#x27;过滤器名&#x27; : function(value, xxx, yyy) &#123;</span><br><span class="line">        //处理逻辑</span><br><span class="line">        return result;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>指令</p>
+<ul>
+<li><p>内置</p>
+<ul>
+<li>v:text : 更新元素的 textContent</li>
+<li>v-html : 更新元素的 innerHTML</li>
+<li>v-if : 如果为true, 当前标签才会输出到页面</li>
+<li>v-else: 如果为false, 当前标签才会输出到页面</li>
+<li>v-show : 通过控制display样式来控制显示/隐藏</li>
+<li>v-for : 遍历数组/对象</li>
+<li>v-on : 绑定事件监听, 一般简写为@</li>
+<li>v-bind : 强制绑定解析表达式, 可以省略v-bind</li>
+<li>v-model : 双向数据绑定</li>
+<li>v-el : 为某个元素注册一个唯一标识, vue对象通过$els属性访问这个元素对象</li>
+<li>v-cloak : 使用它防止闪现表达式, 与css配合: [v-cloak] { display: none }</li>
+</ul>
+</li>
+<li><p>自定义</p>
+<ul>
+<li><p>注册全局指令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Vue.directive(&#x27;my-directive&#x27;, function(value)&#123;</span><br><span class="line">  this.el.innerHTML = value.toUpperCase();</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
+<li><p>注册局部指令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">directives : &#123;</span><br><span class="line">  &#x27;my-directive&#x27; : function(value) &#123;</span><br><span class="line">    this.el.innerHTML = value;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>使用指令:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">v-my-directive=&#x27;xxx&#x27;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
         </div>
 
@@ -424,11 +427,11 @@
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li>本文标题：markdown使用指南</li>
+        <li>本文标题：vue</li>
         <li>本文作者：CJY</li>
-        <li>创建时间：2021-12-11 01:02:30</li>
+        <li>创建时间：2021-12-13 22:06:04</li>
         <li>
-            本文链接：https://bighhs.github.io/2021/12/11/markdown使用指南/
+            本文链接：https://bighhs.github.io/2021/12/13/vue/
         </li>
         <li>
             版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -447,13 +450,13 @@
                     <div class="article-prev">
                         <a class="prev"
                            rel="prev"
-                           href="/2021/12/13/vue/"
+                           href="/2021/12/13/vue%E2%80%94cli/"
                         >
                             <span class="left arrow-icon flex-center">
                               <i class="fas fa-chevron-left"></i>
                             </span>
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">vue</span>
+                                <span class="post-nav-title-item">vue—cli</span>
                                 <span class="post-nav-item">上一篇</span>
                             </span>
                         </a>
@@ -463,10 +466,10 @@
                     <div class="article-next">
                         <a class="next"
                            rel="next"
-                           href="/2021/12/10/welcome/"
+                           href="/2021/12/11/markdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/"
                         >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">welcome</span>
+                                <span class="post-nav-title-item">markdown使用指南</span>
                                 <span class="post-nav-item">下一篇</span>
                             </span>
                             <span class="right arrow-icon flex-center">
@@ -671,7 +674,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">markdown使用指南</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.markdown的基础格式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">1.1换行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">1.2字体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.0.1.3.</span> <span class="nav-text">1.3分割线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.0.1.4.</span> <span class="nav-text">1.4删除线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.0.1.5.</span> <span class="nav-text">1.5块引用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.0.1.6.</span> <span class="nav-text">1.6清单</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.0.1.7.</span> <span class="nav-text">1.7列表间添加元素</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.0.1.8.</span> <span class="nav-text">1.8代码块</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.0.1.9.</span> <span class="nav-text">1.9图片</span></a></li></ol></li></ol></li></ol></li></ol>
+        
     </div>
 </div>
         </aside>
